@@ -4,12 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PH Tube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css"
       rel="stylesheet"
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      *{
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
   </head>
   <body class="px-8 md:px-12 lg:px-20 py-5 md:py-10 lg:py-10 space-y-6">
     <header>
@@ -18,7 +29,7 @@
         <div class="navbar-start">
           <img src="./images/Logo.png" alt="" srcset="" />
         </div>
-        <div class="navbar-center  lg:flex">
+        <div class="navbar-center lg:flex">
           <button
             id="sortByView"
             onclick=""
@@ -28,7 +39,9 @@
           </button>
         </div>
         <div class="navbar-end">
-          <a onclick="blog()" class="bg-red-600 text-white btn btn-md sm:btn-sm md:btn-md lg:btn-md"
+          <a
+            onclick="blog()"
+            class="bg-red-600 text-white btn btn-md sm:btn-sm md:btn-md lg:btn-md"
             >Blog</a
           >
         </div>
@@ -48,10 +61,9 @@
         <div
           id="cardContainer"
           class="grid sm:grid-cols-1 md:grid-cols-2 w-full gap-6 lg:grid-cols-1"
-        >
-        </div>
-          <div id="blogPost" class=" hidden space-y-20 bg-white px-0 py-8">
-            <div>
+        ></div>
+        <div id="blogPost" class="hidden space-y-20 bg-white px-0 py-8">
+          <div>
             <h1 class="text-7xl text-center font-bold text-black mb-4">
               Basic Javascript
             </h1>
@@ -59,87 +71,89 @@
               Welcome to the fundamental JavaScript blog.
             </h1>
           </div>
-            <img class="w-full rounded-lg h-[400px]" src="./images/newlaptop.jpg" alt="" srcset="" />
+          <img
+            class="w-full rounded-lg h-[400px]"
+            src="./images/laptop.jpg"
+            alt=""
+            srcset=""
+          />
 
-            <div class="space-y-10">
-              <div class="">  <h1 class="text-5xl text-left font-bold text-black">
+          <div class="space-y-10">
+            <div class="">
+              <h1 class="text-5xl text-left font-bold text-black">
                 What is var, let and const scope?
-              </h1></div>
-            
-              <p class="text-xl text-gray-500">
-                Javascript is a single thread, interpreted programming
-                language.and it provides developers with various ways to declare
-                variables. Among these are var, let, and const, each with its
-                own scope rules and use cases. In this article, we'll explore
-                the concept of variable scope in JavaScript and how it differs
-                for var, let, and const. But before we will discuss about the
-                scope.
-              </p>
-              <h1 class="text-2xl font-bold text-black">Javascript scope</h1>
-              <p class="text-xl text-gray-500">
-                Scope defines the area of a program where a variable can be
-                accessed or referenced. In JavaScript, there are two main types
-                of scope:
-              </p>
-              <p class="text-xl text-gray-500">
-                1.
-                <span class="text-2xl text-black font-bold">Global:</span>
-                Variables declared at the top level of a script or outside of
-                any function are considered to be in the global scope. These
-                variables can be accessed from anywhere in the code.
-              </p>
-              <p class="text-xl text-gray-500">
-                1.
-                <span class="text-2xl text-black font-bold">Function :</span
-                >Function scope is also called as the local and block scope.
-                Variables declared inside a function or block {} have local
-                scope. They are only accessible within that function or block.
-                Outside the function can't access the value of the variable.
-              </p>
-              <h1 class="text-2xl font-bold text-black">
-                Var (Function scoped)
               </h1>
-              <p class="text-xl text-gray-500">
-                In JavaScript, variables declared with var are function-scoped.
-                This means that you can access var form anywhere in the code.A
-                var variable is accessible throughout the entire function in
-                which it is declared. However, it's important to note that var
-                variables are not block-scoped.
-              </p>
-              <h1 class="text-2xl font-bold text-black">Let (Block-Scoped)</h1>
-              <p class="text-xl text-gray-500">
-                Introduced in ECMAScript 6 (ES6), let variables have block
-                scope. This means that they are limited to the nearest enclosing
-                block, whether it's a function, loop, or any other code block.
-              </p>
-              <h1 class="text-2xl font-bold text-black">
-                Const (Block-Scoped)
-              </h1>
-              <p class="text-xl text-gray-500">
-                Const is also block scoped but immutable. Like let, const
-                variables are block-scoped. However, there's an additional
-                feature: once you assign a value to a const variable, you cannot
-                reassign it to a new value. It remains constant forever. Also
-                cannot declare a variable with the same name again.
-              </p>
             </div>
 
-            <div class="bg-slate-500 h-2 w-full"></div>
+            <p class="text-xl text-gray-500">
+              Javascript is a single thread, interpreted programming
+              language.and it provides developers with various ways to declare
+              variables. Among these are var, let, and const, each with its own
+              scope rules and use cases. In this article, we'll explore the
+              concept of variable scope in JavaScript and how it differs for
+              var, let, and const. But before we will discuss about the scope.
+            </p>
+            <h1 class="text-2xl font-bold text-black">Javascript scope</h1>
+            <p class="text-xl text-gray-500">
+              Scope defines the area of a program where a variable can be
+              accessed or referenced. In JavaScript, there are two main types of
+              scope:
+            </p>
+            <p class="text-xl text-gray-500">
+              <span class="text-2xl text-black font-bold"> 1. Global:</span>
+              Variables declared at the top level of a script or outside of any
+              function are considered to be in the global scope. These variables
+              can be accessed from anywhere in the code.
+            </p>
+            <p class="text-xl text-gray-500">
+              <span class="text-2xl text-black font-bold"> 2. Function :</span
+              >Function scope is also called as the local and block scope.
+              Variables declared inside a function or block {} have local scope.
+              They are only accessible within that function or block. Outside
+              the function can't access the value of the variable.
+            </p>
+            <h1 class="text-2xl font-bold text-black">Var (Function scoped)</h1>
+            <p class="text-xl text-gray-500">
+              In JavaScript, variables declared with var are function-scoped.
+              This means that you can access var form anywhere in the code.A var
+              variable is accessible throughout the entire function in which it
+              is declared. However, it's important to note that var variables
+              are not block-scoped.
+            </p>
+            <h1 class="text-2xl font-bold text-black">Let (Block-Scoped)</h1>
+            <p class="text-xl text-gray-500">
+              Introduced in ECMAScript 6 (ES6), let variables have block scope.
+              This means that they are limited to the nearest enclosing block,
+              whether it's a function, loop, or any other code block.
+            </p>
+            <h1 class="text-2xl font-bold text-black">Const (Block-Scoped)</h1>
+            <p class="text-xl text-gray-500">
+              Const is also block scoped but immutable. Like let, const
+              variables are block-scoped. However, there's an additional
+              feature: once you assign a value to a const variable, you cannot
+              reassign it to a new value. It remains constant forever. Also
+              cannot declare a variable with the same name again.
+            </p>
+          </div>
 
-            <div class="space-y-14">
-           <div class=" " > <h1 class="text-5xl text-left font-bold text-black">
-            Understanding the use cases of null and undefined in JavaScript.
-          </h1></div>
-             
-              <p class="text-xl text-gray-500">
-                In JavaScript, two commonly used values are null and undefined.
-                These values often confuse developers due to their similarities,
-                but they serve different purposes and have specific use cases.
-                In this article, we'll explore when and how to use null and
-                undefined effectively in your JavaScript code.
-              </p>
+          <div class="bg-slate-500 h-2 w-full"></div>
 
-              <div class="space-y-10">
+          <div class="space-y-14">
+            <div class=" ">
+              <h1 class="text-5xl text-left font-bold text-black">
+                Understanding the use cases of null and undefined in JavaScript.
+              </h1>
+            </div>
+
+            <p class="text-xl text-gray-500">
+              In JavaScript, two commonly used values are null and undefined.
+              These values often confuse developers due to their similarities,
+              but they serve different purposes and have specific use cases. In
+              this article, we'll explore when and how to use null and undefined
+              effectively in your JavaScript code.
+            </p>
+
+            <div class="space-y-10">
               <h1 class="text-2xl font-bold text-black">What is "Null"?</h1>
               <p class="text-xl text-gray-500">
                 Null defines the absence of value. The variable that defined as
@@ -149,7 +163,6 @@
               </p>
               <h1 class="text-2xl font-bold text-black">Use cases of null :</h1>
               <p class="text-xl text-gray-500">
-               
                 <span class="text-2xl text-black font-medium">
                   1. Resetting or Clearing Values :</span
                 >
@@ -157,98 +170,107 @@
                 especially for objects or references that are no longer needed.
               </p>
               <p class="text-xl text-gray-500">
-               
                 <span class="text-2xl text-black font-medium"
                   >2. Checking for Initialization :</span
                 >null can be used to check if a variable or property has been
                 initialized or assigned a value. If a variable is null, it
                 usually means it hasn't been set to a specific value yet.
               </p>
-              </div>
+            </div>
 
-              <div class="space-y-10" >
-                <h1 class="text-2xl font-bold text-black">
-                  What is "Undefined"?
-                </h1>
-                <p class="text-xl text-gray-500">
-                  A variable that has not been assigned a value is of type
-                  undefined . A method or statement also returns undefined if
-                  the variable that is being evaluated does not have an assigned
-                  value. A function returns undefined if a value was not
-                  returned .A variable that has not been assigned a value is of
-                  type undefined . A method or statement also returns undefined
-                  if the variable that is being evaluated does not have an
-                  assigned value. A function returns undefined if a value was
-                  not returned .
-                </p>
-                <h1 class="text-2xl font-bold text-black">
-                  Use cases of undefined :
-                </h1>
-                <p class="text-xl text-gray-500">
-                  
-                  <span class="text-2xl text-black font-medium">
+            <div class="space-y-10">
+              <h1 class="text-2xl font-bold text-black">
+                What is "Undefined"?
+              </h1>
+              <p class="text-xl text-gray-500">
+                A variable that has not been assigned a value is of type
+                undefined . A method or statement also returns undefined if the
+                variable that is being evaluated does not have an assigned
+                value. A function returns undefined if a value was not returned
+                .A variable that has not been assigned a value is of type
+                undefined . A method or statement also returns undefined if the
+                variable that is being evaluated does not have an assigned
+                value. A function returns undefined if a value was not returned
+                .
+              </p>
+              <h1 class="text-2xl font-bold text-black">
+                Use cases of undefined :
+              </h1>
+              <p class="text-xl text-gray-500">
+                <span class="text-2xl text-black font-medium">
                   1. Uninitialized Variables :</span
-                  >
-                  Variables that are declared but not assigned a value are
-                  automatically set to undefined. This can be useful when you
-                  want to check if a variable has been declared.
-                </p>
-                <p class="text-xl text-gray-500">
-                 
-                  <span class="text-2xl text-black font-medium"
-                    >2. Property Access : </span
-                  >When you try to access an object property that doesn't exist,
-                  JavaScript returns undefined. This is helpful for checking if
-                  an object contains a specific property.
-                </p>
-              </div>
-              <!-- ?last blog -->
-              <div class="bg-slate-500 h-2 w-full"></div>
-              <div class="space-y-14">
-                <div class="">
+                >
+                Variables that are declared but not assigned a value are
+                automatically set to undefined. This can be useful when you want
+                to check if a variable has been declared.
+              </p>
+              <p class="text-xl text-gray-500">
+                <span class="text-2xl text-black font-medium"
+                  >2. Property Access : </span
+                >When you try to access an object property that doesn't exist,
+                JavaScript returns undefined. This is helpful for checking if an
+                object contains a specific property.
+              </p>
+            </div>
+            <!-- ?last blog -->
+            <div class="bg-slate-500 h-2 w-full"></div>
+            <div class="space-y-14">
+              <div class="">
                 <h1 class="text-5xl text-left font-bold text-black">
                   What is REST API?
                 </h1>
               </div>
+              <p class="text-xl text-gray-500">
+                A REST API (also known as RESTful API) is an application
+                programming interface (API or web API) that conforms to the
+                constraints of REST architectural style and allows for
+                interaction with RESTful web services. REST stands for
+                representational state transfer and was created by computer
+                scientist Roy Fielding. A REST API, which stands for
+                Representational State Transfer Application Programming
+                Interface, is a set of rules and conventions for building and
+                interacting with web services. It's an architectural style and
+                an approach to designing networked applications.
+              </p>
+              <div class="space-y-10">
                 <p class="text-xl text-gray-500">
-                  A REST API (also known as RESTful API) is an application programming interface (API or web API) that conforms to the constraints of REST architectural style and allows for interaction with RESTful web services. REST stands for representational state transfer and was created by computer scientist Roy Fielding.
-                  A REST API, which stands for Representational State Transfer Application Programming Interface, is a set of rules and conventions for building and interacting with web services. It's an architectural style and an approach to designing networked applications.
-                </p>
-                <div class="space-y-10">
-                  <p class="text-xl text-gray-500">
-                  
-                    <span class="text-2xl text-black font-medium">
+                  <span class="text-2xl text-black font-medium">
                     1. Resources:</span
-                    >
-                    In a REST API, everything is treated as a resource, which can be an object, data, or service. Resources are identified by URLs (Uniform Resource Locators). For example, a REST API for a book store might have resources like /books, /authors, and /categories.
-                  </p>
-                  <p class="text-xl text-gray-500">
-                   
-                    <span class="text-2xl text-black font-medium"
-                      >2. HTTP Methods :  </span
-                    >REST APIs use standard HTTP methods to perform CRUD (Create, Read, Update, Delete) operations on resources. The most commonly used HTTP methods in REST are:
-
-                    GET: Retrieve data from the server (Read).
-                    POST: Create a new resource on the server (Create).
-                    PUT: Update an existing resource on the server (Update).
-                    DELETE: Remove a resource from the server (Delete).
-                  </p>
-                  <p class="text-xl text-gray-500">
-                   
-                    <span class="text-2xl text-black font-medium"
-                      >3. Security:  </span
-                    > Security in REST APIs is often implemented using standard HTTP security mechanisms, such as HTTPS for data encryption and authentication through API keys or tokens.
-
-                    REST APIs are widely used in web development and are the foundation for many web services and web applications. They provide a simple and scalable way to expose and consume data and functionality over the internet, making them a fundamental part of modern web development.
-                  </p>
-                </div>
+                  >
+                  In a REST API, everything is treated as a resource, which can
+                  be an object, data, or service. Resources are identified by
+                  URLs (Uniform Resource Locators). For example, a REST API for
+                  a book store might have resources like /books, /authors, and
+                  /categories.
+                </p>
+                <p class="text-xl text-gray-500">
+                  <span class="text-2xl text-black font-medium"
+                    >2. HTTP Methods : </span
+                  >REST APIs use standard HTTP methods to perform CRUD (Create,
+                  Read, Update, Delete) operations on resources. The most
+                  commonly used HTTP methods in REST are: GET: Retrieve data
+                  from the server (Read). POST: Create a new resource on the
+                  server (Create). PUT: Update an existing resource on the
+                  server (Update). DELETE: Remove a resource from the server
+                  (Delete).
+                </p>
+                <p class="text-xl text-gray-500">
+                  <span class="text-2xl text-black font-medium"
+                    >3. Security:
+                  </span>
+                  Security in REST APIs is often implemented using standard HTTP
+                  security mechanisms, such as HTTPS for data encryption and
+                  authentication through API keys or tokens. REST APIs are
+                  widely used in web development and are the foundation for many
+                  web services and web applications. They provide a simple and
+                  scalable way to expose and consume data and functionality over
+                  the internet, making them a fundamental part of modern web
+                  development.
+                </p>
               </div>
-  
-
-
-            
+            </div>
           </div>
-        
+        </div>
       </section>
     </main>
     <script src="js/index.js"></script>

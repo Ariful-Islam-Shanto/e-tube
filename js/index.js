@@ -130,7 +130,7 @@ const categoryData = async (id, newId, sort) => {
         <figure id="figureImg" class="relative" ><img class="h-[200px] w-96 rounded-lg";  src=${
           cate.thumbnail
         } alt="thumbnail" />
-       <div id="myDiv" class="absolute bg-black p-2 rounded-lg text-white bottom-2 right-2" ><span>${hours}hr </span>${minutes} min ago</span></div>
+       <div id="myDiv" class="absolute bg-black p-[4px] text-xs rounded-lg text-white bottom-2 right-2" ><span>${hours}hr </span>${minutes} min ago</span></div>
         </figure>
         <div class="py-6 flex gap-4">
           <div class="">
@@ -140,13 +140,13 @@ const categoryData = async (id, newId, sort) => {
           </div>
 
           <div>
-          <h2 class="text-xl text-black font-bold">${cate?.title}</h2>
-          <h2 class="flex items-center gap-1 text-sm text-gray-500 font-medium">${
+          <h2 class="text-lg text-black font-semibold">${cate?.title}</h2>
+          <h2 class="flex items-center gap-1 text-xs text-gray-500 font-medium">${
             cate.authors !== [] ? cate.authors[0].profile_name : ""
-          } <span>${cate?.authors[0]?.verified !== true ? "<img class='w-4' src='./images/blueBadge.png'/>" : "false"
+          } <span>${cate?.authors[0]?.verified !== true ? "<img class='w-3' src='./images/blueBadge.png'/>" : "false"
         }
           </span></h2>
-          <p class="text-sm text-gray-500 font-medium" >${
+          <p class="text-xs text-gray-500 font-medium" >${
             cate.others !== null ? cate?.others.views : "No views"
           } views </p>
           
