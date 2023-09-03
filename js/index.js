@@ -57,7 +57,7 @@ const categoryData = async (id, newId, sort) => {
 
   document.getElementById('button')
   const cardContainer = document.getElementById("cardContainer");
-  cardContainer.classList.add("grid", "sm:grid-cols-1","md:grid-cols-2", "gap-6", "lg:grid-cols-4");
+  cardContainer.classList.add("grid", "sm:grid-cols-1","md:grid-cols-2", "gap-2", "lg:grid-cols-4");
   cardContainer.innerHTML = '';
 
   if(newId === "button2") {
@@ -105,14 +105,14 @@ const categoryData = async (id, newId, sort) => {
   }
   
   if(cateGory.length === 0) {
-    cardContainer.classList.remove('grid', 'grid-cols-4', 'w-full', 'gap-6');
+    cardContainer.classList.remove('grid', 'grid-cols-4', 'w-full', 'gap-2');
     cardContainer.classList.add('w-full');
     return  cardContainer.innerHTML = `
-    <img class="mx-auto my-auto mt-32 mb-8" src=./images/icon.png />
-    <h1 class="text-center text-4xl text-black font-bold" >Oops!! Sorry, There is <br> no content here</h1>
+    <img class="mx-auto my-auto sm:w-10 md:w-28 lg:w-36 mt-16 mb-8" src=./images/icon.png />
+    <h1 class="text-center text-2xl md:text-3xl lg:text-4xl text-black font-bold" >Oops!! Sorry, There is <br> no content here</h1>
     `;
   }else{
-    cardContainer.classList.add('grid', 'w-full', 'gap-6')
+    cardContainer.classList.add('grid', 'w-full', 'gap-2')
   }
 
   cateGory.forEach((cate) => {

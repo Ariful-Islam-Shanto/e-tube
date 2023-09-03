@@ -33,7 +33,7 @@
           <button
             id="sortByView"
             onclick=""
-            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-md"
+            class="btn ml-6  md:ml-0 lg:ml-0 btn-md sm:btn-md md:btn-md lg:btn-md"
           >
             Sort by view
           </button>
@@ -60,14 +60,14 @@
       <section>
         <div
           id="cardContainer"
-          class="grid sm:grid-cols-1 md:grid-cols-2 w-full gap-6 lg:grid-cols-1"
+          class="grid sm:grid-cols-1 md:grid-cols-2 w-full gap-2 lg:grid-cols-1"
         ></div>
-        <div id="blogPost" class="hidden space-y-20 bg-white px-0 py-8">
+        <div id="blogPost" class="hidden space-y-10 md:space-y-20 lg:space-y-20 bg-white px-0 py-8">
           <div>
-            <h1 class="text-7xl text-center font-bold text-black mb-4">
+            <h1 class="text-4xl md:text-4xl lg:text-7xl text-center font-bold text-black mb-4">
               Basic Javascript
             </h1>
-            <h1 class="text-xl text-center text-gray-600">
+            <h1 class="sm:text-xl md:text-xl lg:text-xl text-center text-gray-600">
               Welcome to the fundamental JavaScript blog.
             </h1>
           </div>
@@ -80,12 +80,12 @@
 
           <div class="space-y-10">
             <div class="">
-              <h1 class="text-5xl text-left font-bold text-black">
+              <h1 class="text-3xl  md:text-4xl lg:text-5xl text-left font-bold text-black">
                 What is var, let and const scope?
               </h1>
             </div>
 
-            <p class="text-xl text-gray-500">
+            <p class="text-sm md:text-lg lg:text-xl text-gray-500">
               Javascript is a single thread, interpreted programming
               language.and it provides developers with various ways to declare
               variables. Among these are var, let, and const, each with its own
@@ -93,41 +93,41 @@
               concept of variable scope in JavaScript and how it differs for
               var, let, and const. But before we will discuss about the scope.
             </p>
-            <h1 class="text-2xl font-bold text-black">Javascript scope</h1>
-            <p class="text-xl text-gray-500">
+            <h1 class="text-lg md:text-2xl lg:text-2xl font-bold text-black">Javascript scope</h1>
+            <p class="text-sm md:text-lg lg:text-xl text-gray-500">
               Scope defines the area of a program where a variable can be
               accessed or referenced. In JavaScript, there are two main types of
               scope:
             </p>
-            <p class="text-xl text-gray-500">
-              <span class="text-2xl text-black font-bold"> 1. Global:</span>
+            <p class="text-sm md:text-lg lg:text-xl text-gray-500">
+              <span class="text-lg md:text-2xl lg:text-2xl text-black font-bold"> 1. Global:</span>
               Variables declared at the top level of a script or outside of any
               function are considered to be in the global scope. These variables
               can be accessed from anywhere in the code.
             </p>
-            <p class="text-xl text-gray-500">
-              <span class="text-2xl text-black font-bold"> 2. Function :</span
+            <p class="text-sm md:text-lg lg:text-xl text-gray-500">
+              <span class="text-lg md:text-2xl lg:text-2xl text-black font-bold"> 2. Function :</span
               >Function scope is also called as the local and block scope.
               Variables declared inside a function or block {} have local scope.
               They are only accessible within that function or block. Outside
               the function can't access the value of the variable.
             </p>
-            <h1 class="text-2xl font-bold text-black">Var (Function scoped)</h1>
-            <p class="text-xl text-gray-500">
+            <h1 class="text-lg md:text-2xl lg:text-2xl font-bold text-black">Var (Function scoped)</h1>
+            <p class="text-sm md:text-lg lg:text-xl text-gray-500">
               In JavaScript, variables declared with var are function-scoped.
               This means that you can access var form anywhere in the code.A var
               variable is accessible throughout the entire function in which it
               is declared. However, it's important to note that var variables
               are not block-scoped.
             </p>
-            <h1 class="text-2xl font-bold text-black">Let (Block-Scoped)</h1>
-            <p class="text-xl text-gray-500">
+            <h1 class="text-lg md:text-2xl lg:text-2xl font-bold text-black">Let (Block-Scoped)</h1>
+            <p class="text-sm md:text-lg lg:text-xl text-gray-500">
               Introduced in ECMAScript 6 (ES6), let variables have block scope.
               This means that they are limited to the nearest enclosing block,
               whether it's a function, loop, or any other code block.
             </p>
-            <h1 class="text-2xl font-bold text-black">Const (Block-Scoped)</h1>
-            <p class="text-xl text-gray-500">
+            <h1 class="text-lg md:text-2xl lg:text-2xl font-bold text-black">Const (Block-Scoped)</h1>
+            <p class="text-sm md:text-lg lg:text-xl text-gray-500">
               Const is also block scoped but immutable. Like let, const
               variables are block-scoped. However, there's an additional
               feature: once you assign a value to a const variable, you cannot
@@ -140,12 +140,12 @@
 
           <div class="space-y-14">
             <div class=" ">
-              <h1 class="text-5xl text-left font-bold text-black">
+              <h1 class="text-3xl  md:text-4xl lg:text-5xl text-left font-bold text-black">
                 Understanding the use cases of null and undefined in JavaScript.
               </h1>
             </div>
 
-            <p class="text-xl text-gray-500">
+            <p class="text-sm md:text-lg lg:text-xl text-gray-500">
               In JavaScript, two commonly used values are null and undefined.
               These values often confuse developers due to their similarities,
               but they serve different purposes and have specific use cases. In
@@ -154,23 +154,23 @@
             </p>
 
             <div class="space-y-10">
-              <h1 class="text-2xl font-bold text-black">What is "Null"?</h1>
-              <p class="text-xl text-gray-500">
+              <h1 class="text-lg md:text-2xl lg:text-2xl font-bold text-black">What is "Null"?</h1>
+              <p class="text-sm md:text-lg lg:text-xl text-gray-500">
                 Null defines the absence of value. The variable that defined as
                 null it has no value. The simplest definition. For example, let
                 number = null; The code above suggests that the number variable
                 is empty at the moment and may have a value later.
               </p>
-              <h1 class="text-2xl font-bold text-black">Use cases of null :</h1>
-              <p class="text-xl text-gray-500">
-                <span class="text-2xl text-black font-medium">
+              <h1 class="text-lg md:text-2xl lg:text-2xl font-bold text-black">Use cases of null :</h1>
+              <p class="text-sm md:text-lg lg:text-xl text-gray-500">
+                <span class="text-lg md:text-2xl lg:text-2xl text-black font-medium">
                   1. Resetting or Clearing Values :</span
                 >
                 You can set a variable to null to reset or clear its value,
                 especially for objects or references that are no longer needed.
               </p>
-              <p class="text-xl text-gray-500">
-                <span class="text-2xl text-black font-medium"
+              <p class="text-sm md:text-lg lg:text-xl text-gray-500">
+                <span class="text-lg md:text-2xl lg:text-2xl text-black font-medium"
                   >2. Checking for Initialization :</span
                 >null can be used to check if a variable or property has been
                 initialized or assigned a value. If a variable is null, it
@@ -179,10 +179,10 @@
             </div>
 
             <div class="space-y-10">
-              <h1 class="text-2xl font-bold text-black">
+              <h1 class="text-lg md:text-2xl lg:text-2xl font-bold text-black">
                 What is "Undefined"?
               </h1>
-              <p class="text-xl text-gray-500">
+              <p class="text-sm md:text-lg lg:text-xl text-gray-500">
                 A variable that has not been assigned a value is of type
                 undefined . A method or statement also returns undefined if the
                 variable that is being evaluated does not have an assigned
@@ -193,19 +193,19 @@
                 value. A function returns undefined if a value was not returned
                 .
               </p>
-              <h1 class="text-2xl font-bold text-black">
+              <h1 class="text-lg md:text-2xl lg:text-2xl font-bold text-black">
                 Use cases of undefined :
               </h1>
-              <p class="text-xl text-gray-500">
-                <span class="text-2xl text-black font-medium">
+              <p class="text-sm md:text-lg lg:text-xl text-gray-500">
+                <span class="text-lg md:text-2xl lg:text-2xl text-black font-medium">
                   1. Uninitialized Variables :</span
                 >
                 Variables that are declared but not assigned a value are
                 automatically set to undefined. This can be useful when you want
                 to check if a variable has been declared.
               </p>
-              <p class="text-xl text-gray-500">
-                <span class="text-2xl text-black font-medium"
+              <p class="text-sm md:text-lg lg:text-xl text-gray-500">
+                <span class="text-lg md:text-2xl lg:text-2xl text-black font-medium"
                   >2. Property Access : </span
                 >When you try to access an object property that doesn't exist,
                 JavaScript returns undefined. This is helpful for checking if an
@@ -216,11 +216,11 @@
             <div class="bg-slate-500 h-2 w-full"></div>
             <div class="space-y-14">
               <div class="">
-                <h1 class="text-5xl text-left font-bold text-black">
+                <h1 class="text-3xl  md:text-4xl lg:text-5xl text-left font-bold text-black">
                   What is REST API?
                 </h1>
               </div>
-              <p class="text-xl text-gray-500">
+              <p class="text-sm md:text-lg lg:text-xl text-gray-500">
                 A REST API (also known as RESTful API) is an application
                 programming interface (API or web API) that conforms to the
                 constraints of REST architectural style and allows for
@@ -233,8 +233,8 @@
                 an approach to designing networked applications.
               </p>
               <div class="space-y-10">
-                <p class="text-xl text-gray-500">
-                  <span class="text-2xl text-black font-medium">
+                <p class="text-sm md:text-lg lg:text-xl text-gray-500">
+                  <span class="text-lg  md:text-2xl lg:text-2xl text-black font-medium">
                     1. Resources:</span
                   >
                   In a REST API, everything is treated as a resource, which can
@@ -243,8 +243,8 @@
                   a book store might have resources like /books, /authors, and
                   /categories.
                 </p>
-                <p class="text-xl text-gray-500">
-                  <span class="text-2xl text-black font-medium"
+                <p class="text-sm md:text-lg lg:text-xl text-gray-500">
+                  <span class="text-lg md:text-2xl lg:text-2xl text-black font-medium"
                     >2. HTTP Methods : </span
                   >REST APIs use standard HTTP methods to perform CRUD (Create,
                   Read, Update, Delete) operations on resources. The most
@@ -254,8 +254,8 @@
                   server (Update). DELETE: Remove a resource from the server
                   (Delete).
                 </p>
-                <p class="text-xl text-gray-500">
-                  <span class="text-2xl text-black font-medium"
+                <p class="text-sm md:text-lg lg:text-xl text-gray-500">
+                  <span class="text-lg md:text-2xl lg:text-2xl text-black font-medium"
                     >3. Security:
                   </span>
                   Security in REST APIs is often implemented using standard HTTP
